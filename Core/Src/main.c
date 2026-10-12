@@ -105,7 +105,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-  
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1|GPIO_PIN_0, GPIO_PIN_RESET);
   uint8_t rec_buf[3];
   if(HAL_UART_Receive(&huart2,rec_buf,3,20) == HAL_OK)
   {
